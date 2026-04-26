@@ -1,0 +1,57 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue-50:  #eff6ff;
+  --blue-100: #dbeafe;
+  --blue-200: #bfdbfe;
+  --blue-400: #60a5fa;
+  --blue-500: #3b82f6;
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+  --blue-900: #1e3a8a;
+  --ink:      #0f172a;
+  --ink-2:    #334155;
+  --ink-3:    #64748b;
+  --ink-4:    #94a3b8;
+  --surface:  #ffffff;
+  --bg:       #f8faff;
+  --border:   #e2e8f0;
+  --radius:   14px;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif:'DM Serif Display', serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Animations ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(1);    opacity: .4; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+
+.fade-up   { animation: fadeUp .6s ease both; }
+.fade-in   { animation: fadeIn .5s ease both; }
+.delay-1   { animation-delay: .1s; }
+.delay-2   { animation-delay: .2s; }
+.delay-3   { animation-delay: .3s; }
+.delay-4   { animation-delay: .4s; }
+.delay-5   { animation-delay: .5s; }
+.delay-6   { animation-delay: .6s; }
+.delay-7   { animation-delay: .7s; }
+.delay-8   { animation-delay: .8s; }
